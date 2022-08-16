@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./assists/css/style.css">
+</head>
+
+<body onload="loadQuestions()">
+    <div id="tryingToGetValueFromInput" class="quiz-container">
+        <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a">
+                    <label class="answers" for="a">options</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b">
+                    <label class="answers" for="b">options</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c">
+                    <label class="answers" for="c">options</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d">
+                    <label class="answers" for="d">options</label>
+                </li>
+            </ul>
+        </div>
+        <div class="parentDivForButton">
+            <button class="button" onclick="checkAnswer()">check Answer</button>
+            <button class="button" onclick="loadQuestions(event , true)">Next</button>
+        </div>
+    </div>
+
+
+    <script src="./assists/js/app.js"></script>
+</body>
+
+</html>
